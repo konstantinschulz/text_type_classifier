@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+  dcg:
+    build:
+      context: .
+      dockerfile: docker/dcg/Dockerfile
+#    command: tail -f /dev/null
+    image: konstantinschulz/document-classification-german:v1
+#    ports:
+#      - 8000:8000
+#  distilbert:
+#    build:
+#      context: .
+#      dockerfile: docker/distilbert/Dockerfile
+#    image: konstantinschulz/distilbert-base-uncased:latest
